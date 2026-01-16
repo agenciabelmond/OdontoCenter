@@ -83,7 +83,7 @@ export function PaymentSection() {
             </div>
 
             <div className="px-8 pt-6 pb-8">
-              <p className="text-base leading-relaxed text-foreground">
+              <p className="text-base leading-relaxed text-foreground dark:text-gray-900">
                 Tratamento moderno, seguro e acessível, com planejamento
                 personalizado pela nossa equipe.
               </p>
