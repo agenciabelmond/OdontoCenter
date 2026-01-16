@@ -153,8 +153,8 @@ export function HeroSection() {
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
 
               <Image
-                src="/camila.jpeg"
-                alt="Recepção da Clínica"
+                src="/camilaai.png"
+                alt="Camila"
                 width={800}
                 height={600}
                 className="h-auto w-full"
