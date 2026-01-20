@@ -73,9 +73,11 @@ export function TreatmentProcess() {
                     {step.title}
                   </h3>
 
-                  <p className="text-sm leading-relaxed text-white">
-                    {step.description}
-                  </p>
+                <p className="text-sm leading-relaxed text-[#3a4a6a] dark:text-[#d6def0]">
+                  {step.description}
+                </p>
+
+
                 </div>
               ))}
             </div>

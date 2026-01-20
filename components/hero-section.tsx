@@ -67,11 +67,11 @@ export function HeroSection() {
     leading-tight
   `}
 >
-  Procurando por{" "}
+  Recupere seus dentes e sua confiança com{" "}
   <span className="text-[#9f7a4a] dark:text-[#bd9765]">
-    Implantes Dentários
+    implantes seguros e sem dor
   </span>{" "}
-  em Goiânia?
+  em Goiânia
 </h1>
 
             </div>
@@ -88,7 +88,8 @@ export function HeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
-           <Button
+        <Button
+  asChild
   size="lg"
   className="
     relative px-10 py-4 text-lg font-medium
@@ -107,11 +108,18 @@ export function HeroSection() {
     dark:hover:shadow-[0_0_28px_rgba(182,175,165,0.65)]
   "
 >
-  Agendar Consulta
+  <a
+    href="https://wa.me/+556282139597?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Agendar Consulta
+  </a>
 </Button>
 
 
 <Button
+  asChild
   size="lg"
   className="
     relative px-10 py-4 text-lg font-medium
@@ -123,8 +131,11 @@ export function HeroSection() {
     hover:shadow-[0_0_14px_rgba(255,255,255,0.6)]
   "
 >
-  Saiba Mais
+  <a href="#sobre">
+    Saiba Mais
+  </a>
 </Button>
+
 
 
             </div>
@@ -140,7 +151,7 @@ export function HeroSection() {
                 ))}
               </div>
             <p className="text-sm text-gray-600 dark:text-white">
-  Mais de <span className="font-bold">2k+</span> pacientes satisfeitos
+  Mais de <span className="font-bold">35 mil</span> pacientes satisfeitos
 </p>
 
             </div>
@@ -153,7 +164,7 @@ export function HeroSection() {
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
 
               <Image
-                src="/camilaai.png"
+                src="/camilapaginainicial.png"
                 alt="Camila"
                 width={800}
                 height={600}
@@ -165,7 +176,7 @@ export function HeroSection() {
               <InfoBadge
                 position="bottom-left"
                 icon="file"
-                value="2k+"
+                value="35k"
                 label="Pacientes atendidos"
               />
 

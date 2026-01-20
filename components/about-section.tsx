@@ -7,7 +7,8 @@ const gfsDidot = GFS_Didot({
 
 export function AboutSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#e6dbcd]/80 via-[#e6dbcd]/30 to-[#bd9765]/20 dark:from-[#242e44]
+    <section id="sobre" 
+    className="py-20 bg-gradient-to-br from-[#e6dbcd]/80 via-[#e6dbcd]/30 to-[#bd9765]/20 dark:from-[#242e44]
     dark:via-[#313f5d]
     dark:to-[#3b4a6a]">
       <div className="container mx-auto px-4">

@@ -13,13 +13,13 @@ const gfsDidot = GFS_Didot({
 export function VideoTestimonials() {
   const videos = [
   {
-    youtubeId: "2EvbAxUghdA",
+    youtubeId: "hgWi5bEUmRg",
     title: "Transformação Completa",
     description:
       "Dizer adeus à dentadura velha e dar as boas-vindas aos dentes fixos não é apenas estética, é liberdade, saúde e rejuvenescimento.",
   },
   {
-    youtubeId: "WJxRKxYtToA",
+    youtubeId: "mrcygtQXAWc",
     title: "Volte a sorrir, volte a viver",
     description:
       "Não é só sobre dentes. É sobre voltar a sentir prazer em comer, conforto e felicidade ao sorrir.",
@@ -75,26 +75,49 @@ export function VideoTestimonials() {
 
           {/* CTA */}
           <div className="mt-12 text-center">
-            <Button
-              size="lg"
-              asChild
-              className="
-                bg-[#9f7a4a]
-                px-8 py-6
-                text-lg text-white
-                hover:bg-[#c4af6e]
-                border border-[#e6d3a3]/70
-                animate-pulse
-              "
+           <Button
+            size="lg"
+            asChild
+            className="
+              relative
+              px-8 py-6
+              text-lg font-semibold text-white
+
+              bg-[#9f7a4a]
+              hover:bg-[#c4af6e]
+
+              border border-[#f3e3b3]/80
+              rounded-xl
+
+              transition-all duration-300 ease-out
+
+              /* Neon Glow */
+              shadow-[0_0_25px_rgba(159,122,74,0.85)]
+              hover:shadow-[0_0_45px_rgba(196,175,110,0.95)]
+
+              /* Pulse refinado */
+              animate-[pulse_2.5s_ease-in-out_infinite]
+
+              /* Halo neon */
+              before:absolute
+              before:inset-0
+              before:rounded-xl
+              before:bg-[#c4af6e]/20
+              before:blur-xl
+              before:opacity-70
+              before:content-['']
+              before:-z-10
+            "
+          >
+            <a
+              href="https://wa.me/+556282139597?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://wa.me/5562982139597"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Quero Ter Esse Resultado
-              </a>
-            </Button>
+              Quero Ter Esse Resultado
+            </a>
+          </Button>
+
           </div>
         </div>
       </div>

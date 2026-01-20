@@ -53,7 +53,7 @@ export function LocationSection() {
             ONDE ESTAMOS
           </h2>
 
-          <p className="mb-12 text-center text-lg text-gray-700 dark: text-white">
+          <p className="mb-12 text-center text-lg text-gray-700 dark:text-white">
             Duas unidades para melhor atender você em Goiânia
           </p>
 
@@ -108,7 +108,7 @@ export function LocationSection() {
                     className="w-full bg-[#bd9765] text-white transition-all hover:bg-[#a88a55] dark: dark:bg-[#404d6b]"
                   >
                     <a
-                      href={`https://wa.me/5562982139597?text=Olá! Gostaria de agendar uma consulta na ${location.name}`}
+                      href={`https://wa.me/6282139597?text=Olá! Gostaria de agendar uma consulta na ${location.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -48,7 +48,10 @@ export function PaymentSection() {
               realidade financeira.
             </p>
 
-            <button
+            <a
+              href="https://wa.me/+556282139597?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 inline-flex items-center justify-center
                 rounded-xl px-8 py-4
@@ -59,7 +62,8 @@ export function PaymentSection() {
               "
             >
               Agendar avaliação
-            </button>
+            </a>
+
           </div>
 
           {/* CARD / IMAGEM */}
