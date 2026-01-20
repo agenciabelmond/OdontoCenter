@@ -58,15 +58,16 @@ export function HeroSection() {
 </p>
 
 
-            <h1
+<h1
   className={`
     ${gfsDidot.className}
     text-4xl md:text-5xl lg:text-6xl
     font-light tracking-[0.02em]
     text-gray-900 dark:text-white
-    leading-tight
+    leading-[1.1]
   `}
 >
+
   Recupere seus dentes e sua confiança com{" "}
   <span className="text-[#9f7a4a] dark:text-[#bd9765]">
     implantes seguros e sem dor
