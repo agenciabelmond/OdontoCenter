@@ -11,24 +11,55 @@ const gfsDidot = GFS_Didot({
 })
 
 export function VideoTestimonials() {
-  const videos = [
-{
-  youtubeId: "hgWi5bEUmRg",
-  title: "Transformação Completa",
-  description:
-    "“Tchau, feião. Agora vem um sorriso novo.” Um novo sorriso não é só estética, é reencontro com a própria confiança.",
+    const videos = [
+  {
+    youtubeId: "hgWi5bEUmRg",
+    title: "Transformação Completa",
+    description: (
+  <>
+  <p style={{ textAlign: "center" }}>
+  “Tchau, feião. Agora vem um sorriso novo.”
+  </p>
+    <p style={{ textAlign: "center", fontWeight: "bold" }}>
+  - Osvaldo
+  </p>
+  <p>
+  Um novo sorriso não é só estética, é reencontro com a própria confiança.
+  </p>
+  </>
+  ),
 },
   {
     youtubeId: "Nl-rfJRPYc4",
     title: "Volte a sorrir, volte a viver",
-    description:
-      "“Sonho realizado, mas ficou bonita, hein! Comer fora no restaurante é complicado, né? Eu não vou, é complicado você comer com uma prótese removível”. Recupere a liberdade de sorrir para a vida e o prazer de sentar à mesa com quem você ama.",
+    description: (
+<>
+<p style={{ textAlign: "center" }}>
+“Sonho realizado, mas ficou bonita, hein! Comer fora no restaurante é complicado, né? Eu não vou, é complicado você comer com uma prótese removível.”
+</p>
+<p style={{ textAlign: "center", fontWeight: "bold" }}>
+- Ana Maria
+</p>
+<p>
+Recupere a liberdade de sorrir para a vida e o prazer de sentar à mesa com quem você ama.
+</p>
+</>
+),
   },
   {
     youtubeId: "ptWpijFpW6s",
     title: "Satisfação Garantida",
-    description:
-      "“Fui tentar economizar, mas não deu certo. Eu pagaria menos da metade mas foi o maior erro da minha vida, porque não deu certo e eu vim conhecer a Odontocenter, onde eu fui muito feliz aqui com o procedimento, muito bem tratado por vocês todos aqui e... puxa vida, para mim foi um milagre que aconteceu.”",
+    description: (
+<>
+<p style={{ textAlign: "center" }}>
+“Fui tentar economizar, mas não deu certo. Eu pagaria menos da metade mas foi o maior erro da minha vida, porque não deu certo e eu vim conhecer a Odontocenter, onde eu fui muito feliz aqui com o procedimento, muito bem tratado por vocês todos aqui e... puxa vida, para mim foi um milagre que aconteceu.”
+</p>
+<p style={{ textAlign: "center", fontWeight: "bold" }}>
+- Saulo
+</p>
+
+</>
+),
   },
 ]
 
