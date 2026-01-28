@@ -12,23 +12,23 @@ const gfsDidot = GFS_Didot({
 
 export function VideoTestimonials() {
   const videos = [
+{
+  youtubeId: "hgWi5bEUmRg",
+  title: "Transformação Completa",
+  description:
+    "“Tchau, feião. Agora vem um sorriso novo.” — Sr. Osvaldo. Um novo sorriso não é só estética, é reencontro com a própria confiança.",
+},
   {
-    youtubeId: "hgWi5bEUmRg",
-    title: "Transformação Completa",
-    description:
-      "Dizer adeus à dentadura velha e dar as boas-vindas aos dentes fixos não é apenas estética, é liberdade, saúde e rejuvenescimento.",
-  },
-  {
-    youtubeId: "mrcygtQXAWc",
+    youtubeId: "Nl-rfJRPYc4",
     title: "Volte a sorrir, volte a viver",
     description:
-      "Não é só sobre dentes. É sobre voltar a sentir prazer em comer, conforto e felicidade ao sorrir.",
+      "“Sonho realizado, mas ficou bonita, hein! Comer fora no restaurante é complicado, né? Eu não vou, é complicado você comer com uma prótese removível”. Recupere a liberdade de sorrir para a vida e o prazer de sentar à mesa com quem você ama.",
   },
   {
     youtubeId: "ptWpijFpW6s",
     title: "Satisfação Garantida",
     description:
-      "Autoestima restaurada, segurança ao sorrir e prazer em viver cada momento.",
+      "“Fui tentar economizar, mas não deu certo. Eu pagaria menos da metade mas foi o maior erro da minha vida, porque não deu certo e eu vim conhecer a Odontocenter, onde eu fui muito feliz aqui com o procedimento, muito bem tratado por vocês todos aqui e... puxa vida, para mim foi um milagre que aconteceu.”",
   },
 ]
 

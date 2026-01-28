@@ -185,8 +185,8 @@ export function HeroSection() {
               <InfoBadge
                 position="top-right"
                 icon="star"
-                value="8k+"
-                label="Tratamentos realizados"
+                value="18 anos"
+                label="de experiência no mercado"
               />
 
             </div>
