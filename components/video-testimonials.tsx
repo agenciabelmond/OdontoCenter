@@ -16,7 +16,7 @@ export function VideoTestimonials() {
   youtubeId: "hgWi5bEUmRg",
   title: "Transformação Completa",
   description:
-    "“Tchau, feião. Agora vem um sorriso novo.” — Sr. Osvaldo. Um novo sorriso não é só estética, é reencontro com a própria confiança.",
+    "“Tchau, feião. Agora vem um sorriso novo.” Um novo sorriso não é só estética, é reencontro com a própria confiança.",
 },
   {
     youtubeId: "Nl-rfJRPYc4",
