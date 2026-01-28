@@ -17,12 +17,10 @@ export function VideoTestimonials() {
     title: "Transformação Completa",
     description: (
   <>
-  <p style={{ textAlign: "center" }}>
-  “Tchau, feião. Agora vem um sorriso novo.”
-  </p>
-    <p style={{ textAlign: "center", fontWeight: "bold" }}>
-  - Osvaldo
-  </p>
+ <p style={{ textAlign: "center" }}>
+  “Tchau, feião. Agora vem um sorriso novo.”{" "}
+  <strong>- Osvaldo</strong>
+</p>
   <p>
   Um novo sorriso não é só estética, é reencontro com a própria confiança.
   </p>
