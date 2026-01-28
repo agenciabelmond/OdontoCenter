@@ -177,16 +177,16 @@ export function HeroSection() {
               <InfoBadge
                 position="bottom-left"
                 icon="file"
-                value="35k"
-                label="Pacientes atendidos"
+                value="18 anos"
+                label="de experiência no mercado"
               />
 
               {/* Tratamentos realizados */}
               <InfoBadge
                 position="top-right"
                 icon="star"
-                value="18 anos"
-                label="de experiência no mercado"
+                value="35k"
+                label="Pacientes atendidos"
               />
 
             </div>
