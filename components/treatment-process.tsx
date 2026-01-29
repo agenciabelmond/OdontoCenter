@@ -17,13 +17,13 @@ export function TreatmentProcess() {
       number: "02",
       title: "PLANO PERSONALIZADO",
       description:
-        "Planejamento digital avançado criado especificamente para você, garantindo precisão e resultados previsíveis.",
+        "Planejamento criado especificamente para você, garantindo precisão e resultados previsíveis.",
     },
     {
       number: "03",
       title: "TECNOLOGIA DE PONTA",
       description:
-        "Procedimentos guiados por computador com equipamentos modernos para máxima segurança e eficiência.",
+        "Câmeras intraorais para máxima segurança e eficiência do seu tratamento.",
     },
     {
       number: "04",
