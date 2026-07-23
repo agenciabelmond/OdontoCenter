@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState } from "react"
+import type { ReactNode } from "react"
 import { Button } from "@/components/ui/button"
 import { Play } from "lucide-react"
 import { GFS_Didot } from "next/font/google"
@@ -11,148 +12,149 @@ const gfsDidot = GFS_Didot({
 })
 
 export function VideoTestimonials() {
-    const videos = [
-  {
-    youtubeId: "hgWi5bEUmRg",
-    title: "Transformação Completa",
-    description: (
-  <>
- <p style={{ textAlign: "center" }}>
-  “Tchau, feião. Agora vem um sorriso novo.”{" "}
-  <strong>- Osvaldo</strong>
-</p>
-  <p>
-  Um novo sorriso não é só estética, é reencontro com a própria confiança.
-  </p>
-  </>
-  ),
-},
-  {
-    youtubeId: "Nl-rfJRPYc4",
-    title: "Volte a sorrir, volte a viver",
-    description: (
-<>
-<p style={{ textAlign: "center" }}>
-“Sonho realizado, mas ficou bonita, hein! Comer fora no restaurante é complicado, né? Eu não vou, é complicado você comer com uma prótese removível.”
-</p>
-<p style={{ textAlign: "center", fontWeight: "bold" }}>
-- Ana Maria
-</p>
-<p>
-Recupere a liberdade de sorrir para a vida e o prazer de sentar à mesa com quem você ama.
-</p>
-</>
-),
-  },
-  {
-    youtubeId: "ptWpijFpW6s",
-    title: "Satisfação Garantida",
-    description: (
-<>
-<p style={{ textAlign: "center" }}>
-“Fui tentar economizar, mas não deu certo. Eu pagaria menos da metade mas foi o maior erro da minha vida, porque não deu certo e eu vim conhecer a Odontocenter, onde eu fui muito feliz aqui com o procedimento, muito bem tratado por vocês todos aqui e... puxa vida, para mim foi um milagre que aconteceu.”
-</p>
-<p style={{ textAlign: "center", fontWeight: "bold" }}>
-- Saulo
-</p>
+  const videos = [
+    {
+      youtubeId: "hgWi5bEUmRg",
+      title: "Transformação Completa",
+      description: (
+        <>
+          <p className="text-center">
+            “Tchau, feião. Agora vem um sorriso novo.”{" "}
+            <strong>- Osvaldo</strong>
+          </p>
 
-</>
-),
-  },
-]
+          <p>
+            Um novo sorriso não é só estética, é reencontro com a própria
+            confiança.
+          </p>
+        </>
+      ),
+    },
 
+    {
+      youtubeId: "Nl-rfJRPYc4",
+      title: "Volte a sorrir, volte a viver",
+      description: (
+        <>
+          <p className="text-center">
+            “Sonho realizado, mas ficou bonita, hein! Comer fora no restaurante
+            é complicado, né? Eu não vou, é complicado você comer com uma
+            prótese removível.”
+          </p>
+
+          <p className="text-center font-bold">
+            - Ana Maria
+          </p>
+
+          <p>
+            Recupere a liberdade de sorrir para a vida e o prazer de sentar à
+            mesa com quem você ama.
+          </p>
+        </>
+      ),
+    },
+
+    {
+      youtubeId: "ptWpijFpW6s",
+      title: "Satisfação Garantida",
+      description: (
+        <>
+          <p className="text-center">
+            “Fui tentar economizar, mas não deu certo. Eu pagaria menos da
+            metade mas foi o maior erro da minha vida, porque não deu certo e eu
+            vim conhecer a Odontocenter, onde eu fui muito feliz aqui com o
+            procedimento, muito bem tratado por vocês todos aqui e... puxa
+            vida, para mim foi um milagre que aconteceu.”
+          </p>
+
+          <p className="text-center font-bold">
+            - Saulo
+          </p>
+        </>
+      ),
+    },
+  ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#f1ede7]/90 via-[#d6c8b5]/60 to-[#9c8468]/40 py-20
-    bg-gradient-to-br
-    from-[#f1ede7]/90
-    via-[#d6c8b5]/60
-    to-[#9c8468]/40
-    dark:bg-gradient-to-br
-    dark:from-[#2f3a52]
-    dark:via-[#3a4a6a]
-    dark:to-[#404d6b]">
+    <section
+      className="
+        py-20
+        bg-gradient-to-br
+        from-[#f1ede7]/90
+        via-[#d6c8b5]/60
+        to-[#9c8468]/40
+        dark:from-[#2f3a52]
+        dark:via-[#3a4a6a]
+        dark:to-[#404d6b]
+      "
+    >
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl">
-          {/* Título */}
-         <h2
-  className={`
-    ${gfsDidot.className}
-    mb-4
-    text-center
-    text-3xl md:text-4xl
-    font-light
-    tracking-[0.12em]
-    text-[#9f7a4a]
-    dark:text-[#bd9765]
-  `}
->
+
+          <h2
+            className={`
+              ${gfsDidot.className}
+              mb-4
+              text-center
+              text-3xl md:text-4xl
+              font-light
+              tracking-[0.12em]
+              text-[#9f7a4a]
+              dark:text-[#bd9765]
+            `}
+          >
             HISTÓRIAS REAIS DE TRANSFORMAÇÃO
           </h2>
 
-        <p className="mb-12 text-center text-lg font-medium text-gray-700 dark:text-white">
-  Pacientes que conquistaram o sorriso dos sonhos
-</p>
+          <p className="mb-12 text-center text-lg font-medium text-gray-700 dark:text-white">
+            Pacientes que conquistaram o sorriso dos sonhos
+          </p>
 
 
-          {/* Vídeos */}
           <div className="grid gap-8 md:grid-cols-3">
             {videos.map((video, index) => (
-              <VideoCard key={index} {...video} />
+              <VideoCard
+                key={index}
+                {...video}
+              />
             ))}
           </div>
 
-          {/* CTA */}
+
           <div className="mt-12 text-center">
-           <Button
-            size="lg"
-            asChild
-            className="
-              relative
-              px-8 py-6
-              text-lg font-semibold text-white
-
-              bg-[#9f7a4a]
-              hover:bg-[#c4af6e]
-
-              border border-[#f3e3b3]/80
-              rounded-xl
-
-              transition-all duration-300 ease-out
-
-              /* Neon Glow */
-              shadow-[0_0_25px_rgba(159,122,74,0.85)]
-              hover:shadow-[0_0_45px_rgba(196,175,110,0.95)]
-
-              /* Pulse refinado */
-              animate-[pulse_2.5s_ease-in-out_infinite]
-
-              /* Halo neon */
-              before:absolute
-              before:inset-0
-              before:rounded-xl
-              before:bg-[#c4af6e]/20
-              before:blur-xl
-              before:opacity-70
-              before:content-['']
-              before:-z-10
-            "
-          >
-            <a
-              href="https://wa.me/+556282139597?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-              target="_blank"
-              rel="noopener noreferrer"
+            <Button
+              size="lg"
+              asChild
+              className="
+                relative
+                px-8 py-6
+                text-lg font-semibold text-white
+                bg-[#9f7a4a]
+                hover:bg-[#c4af6e]
+                border border-[#f3e3b3]/80
+                rounded-xl
+                transition-all duration-300
+                shadow-[0_0_25px_rgba(159,122,74,0.85)]
+                hover:shadow-[0_0_45px_rgba(196,175,110,0.95)]
+                animate-[pulse_2.5s_ease-in-out_infinite]
+              "
             >
-              Quero Ter Esse Resultado
-            </a>
-          </Button>
-
+              <a
+                href="https://wa.me/+556282139597?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Quero Ter Esse Resultado
+              </a>
+            </Button>
           </div>
+
         </div>
       </div>
     </section>
   )
 }
+
 
 /* ==================================================
    VIDEO CARD
@@ -165,7 +167,7 @@ function VideoCard({
 }: {
   youtubeId: string
   title: string
-  description: string
+  description: ReactNode
 }) {
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -182,9 +184,11 @@ function VideoCard({
         dark:bg-[#4d6089]
       "
     >
+
       <h3 className="mb-4 text-center text-2xl font-bold text-[#9f7a4a] dark:text-white">
         {title}
       </h3>
+
 
       <div
         onClick={() => setIsPlaying(true)}
@@ -199,6 +203,7 @@ function VideoCard({
           }
         `}
       >
+
         {!isPlaying ? (
           <>
             <img
@@ -206,6 +211,7 @@ function VideoCard({
               alt={title}
               className="aspect-[9/16] w-full object-cover"
             />
+
             <div className="absolute inset-0 flex items-center justify-center bg-black/30">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/90 transition hover:scale-110">
                 <Play className="h-6 w-6 text-[#bd9765]" />
@@ -221,9 +227,11 @@ function VideoCard({
             allowFullScreen
           />
         )}
+
       </div>
 
-      <p
+
+      <div
         className="
           mt-4
           text-center
@@ -234,8 +242,8 @@ function VideoCard({
         "
       >
         {description}
-      </p>
+      </div>
+
     </div>
   )
 }
-
